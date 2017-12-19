@@ -7,7 +7,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Avatar initials="CAB" size={35} backgroundColor={'teal'} />
+        <Avatar initials="CAB" size={35} backgroundColor={'orange'} />
       </View>
     )
   }
