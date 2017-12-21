@@ -2,13 +2,19 @@ import React from 'react'
 import { Constants } from 'expo'
 import { StyleSheet, Text, View } from 'react-native'
 
-import Avatar from './components/Avatar'
+import AuthorRow from './components/AuthorRow'
 
 export default class App extends React.Component {
+  handle = () => {}
+
   render() {
     return (
       <View style={styles.container}>
-        <Avatar initials="CAB" size={35} backgroundColor={'orange'} />
+        <AuthorRow
+          fullName="Cernan Bernardo"
+          linkText="Comments"
+          onPressLinkText={this.handle}
+        />
       </View>
     )
   }
